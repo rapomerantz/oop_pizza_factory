@@ -1,7 +1,7 @@
 let empty = []; 
 let cheesePizza = {}; 
-let pepPizza = {ing2 : "pep"}; 
-let meatPizza = {ing2: "pepp", ing3: "sausage", ing4: "bacon"}; 
+let pepPizza = {ing1: 'cheese', ing2 : "pep"}; 
+let meatPizza = {ing1: 'cheese', ing2: "pepp", ing3: "sausage", ing4: "bacon"}; 
 let alfredoPizza = {ing1: 'alfredo sauce', ing2: 'fresh tomato', ing3:'olives', ing4: 'grilled chicken'}; 
 
 
@@ -31,20 +31,23 @@ class Pizza {
     }
 }; 
 
-class Order extends Pizza {
-    constructor({ pizza1 = undefined, pizza2 = undefined }) {
-        super(); 
-        this.pizza1 = pizza1; 
-        this.pizza2 = pizza2; 
-    }
+// class Order extends Pizza {
+//     constructor() {
+//         super(); 
+//         // this.pizza1 = pizza1; 
+//         // this.pizza2 = pizza2; 
+//     }
+//     addPizza(pizza) {
+//         return new Pizza(pizza); 
 
-}
+//     }
+// }
 
 
 
 
-let firstOrder = new Order (pepPizza); 
-console.log(firstOrder);
+// let firstOrder = new Order (pepPizza); 
+// console.log(firstOrder.addPizza(pepPizza));
 
 
 
